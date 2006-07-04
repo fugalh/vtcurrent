@@ -20,8 +20,8 @@ int main(void)
 
     if (ioctl(ttyfd, VT_GETSTATE, &vts) < 0)
     {
-	perror("ioctl");
-	exit(1);
+        perror("ioctl");
+        exit(1);
     }
 
     close(ttyfd);
